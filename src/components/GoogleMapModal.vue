@@ -1,5 +1,5 @@
 <template>
-    <div ref="googleMap" class="google-map-modal"></div>
+  <div ref="googleMap" class="google-map-modal"></div>
 </template>
 
 <script>
@@ -76,7 +76,7 @@ export default {
 
 <style lang="less" scoped>
 .google-map-modal {
- width: 100%;
- height: 500px;
+  width: 100%;
+  height: 500px;
 }
 </style>

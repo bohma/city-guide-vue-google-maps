@@ -1,7 +1,11 @@
 <template>
   <nav>
     <a @click="showMap()" class="show-map">SHOW THE MAP</a>
-    <show-map :locations="locations" v-if="showModal" @close="showModal = false" ></show-map>
+    <show-map
+      :locations="locations"
+      v-if="showModal"
+      @close="showModal = false"
+    ></show-map>
   </nav>
 </template>
 
@@ -11,10 +15,10 @@ export default {
   components: {
     ShowMap,
   },
-  data(){
-    return{
-      showModal: false
-    }
+  data() {
+    return {
+      showModal: false,
+    };
   },
   props: {
     locations: {
@@ -24,7 +28,7 @@ export default {
   },
   methods: {
     showMap() {
-      this.showModal = !this.showModal
+      this.showModal = !this.showModal;
     },
   },
 };
